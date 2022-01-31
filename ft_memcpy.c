@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include <unistd.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -20,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*tmp2;
 
 	i = 0;
+	if (!dest && !src)
+		return (NULL);
 	tmp1 = (unsigned char *)src;
 	tmp2 = (unsigned char *)dest;
 	while (n > i)

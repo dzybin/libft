@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
-#include <bsd/string.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s, char const *set)
@@ -19,9 +18,9 @@ char	*ft_strtrim(char const *s, char const *set)
 	unsigned int	j;
 
 	i = 0;
-	j = ft_strlen(s);
 	if (!s || !set)
 		return (0);
+	j = ft_strlen(s);
 	while (i < j && ft_strchr(set, s[i]))
 		i++;
 	while (i < j && ft_strchr(set, s[j]))
