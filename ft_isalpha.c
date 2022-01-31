@@ -6,13 +6,13 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:33:32 by dzybin            #+#    #+#             */
-/*   Updated: 2021/11/24 18:13:33 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 14:48:44 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return(1);
+		return (1);
 	return (0);
 }

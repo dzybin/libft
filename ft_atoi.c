@@ -6,16 +6,19 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 07:55:25 by dzybin            #+#    #+#             */
-/*   Updated: 2021/12/07 09:07:28 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 14:39:53 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int	i = 0;
-	int	sign = 1;
-	int	result = 0;
+	int	i;
+	int	sign;
+	int	result;
 
+	sign = 1;
+	i = 0;
+	result = 0;
 	while (nptr[i] == ' ' || (nptr[i] >= '\t' && nptr[i] <= '\r'))
 		i++;
 	if (nptr[i] == '+' || nptr[i] == '-')

@@ -6,14 +6,14 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 12:37:43 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/10 15:58:40 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 15:35:41 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
 
-int 	ft_sign_allocation(int number)
+int	ft_sign_allocation(int number)
 {
 	if (number < 0)
 		return (-number);
@@ -42,14 +42,14 @@ static int	len_needed(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*str;
-	unsigned int 	len;
+	char			*str;
+	unsigned int	len;
 	unsigned int	nabs;
 
 	len = len_needed(n);
 	str = malloc((len + 1) * sizeof(char));
 	if (!str)
-		return(NULL);
+		return (NULL);
 	str[len] = '\0';
 	if (n < 0)
 		str[0] = '-';
@@ -57,19 +57,11 @@ char	*ft_itoa(int n)
 	if (nabs == 0)
 		str[0] = '0';
 	while (--len > 0)
-		{
-			str[len] = (nabs % 10) + '0';
-			nabs /= 10;
-		}
-		if (n > 0)
-			str[0] = (nabs % 10) + '0';
-		return (str);
-}
-
-int	main()
-{
-	int	n = 8769;
-
-	printf("%s\n", ft_itoa(n));
-	return (0);
+	{
+		str[len] = (nabs % 10) + '0';
+		nabs /= 10;
+	}
+	if (n > 0)
+		str[0] = (nabs % 10) + '0';
+	return (str);
 }

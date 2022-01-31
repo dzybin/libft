@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 15:09:05 by dzybin            #+#    #+#             */
-/*   Updated: 2021/12/02 15:09:16 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 15:47:11 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@ int	ft_toupper(int c)
 	if (c >= 97 && c <= 122)
 	{
 		c = c - 32;
-	return c;
+		return (c);
 	}
-	else 
-		return c;
+	else
+		return (c);
 }

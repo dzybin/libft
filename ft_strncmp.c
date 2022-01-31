@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 10:36:08 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/19 15:58:25 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 15:23:53 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*ss1;
 	unsigned char	*ss2;
 

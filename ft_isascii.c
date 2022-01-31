@@ -6,12 +6,12 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 16:19:27 by dzybin            #+#    #+#             */
-/*   Updated: 2021/11/25 16:19:32 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 14:50:51 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);
@@ -26,5 +26,3 @@ int ft_isascii(int c)
 //	printf("original %d\n", isascii(c));
 //	return (0);
 //}
-
-

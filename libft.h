@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 14:28:45 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/17 15:19:04 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 15:23:08 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,8 @@ int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strdup(const char *s);
 /*
 ** Memory
 */
@@ -111,6 +112,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	ft_memdel(void **ap);
 void	*ft_memalloc(size_t size);
 void	*ft_calloc(size_t dest, size_t size);
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif

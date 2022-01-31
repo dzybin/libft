@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memTest.c                                          :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/29 16:30:22 by dzybin            #+#    #+#             */
-/*   Updated: 2021/11/29 16:30:28 by dzybin           ###   ########.fr       */
+/*   Created: 2022/01/31 16:22:03 by dzybin            #+#    #+#             */
+/*   Updated: 2022/01/31 16:22:07 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <string.h>
-#include <stdio.h>
-int main()
-{
-    char str1[] = "asdfghj";
-    //char str2[] = "asdfghj";
-    memmove (str] + 1, str1, 4);
-    return(0);
-}
 
+#include "libft.h"
+
+int	ft_abs(int nb)
+{
+	if (nb < 0)
+		return (-nb);
+	else
+		return (nb);
+}

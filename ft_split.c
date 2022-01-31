@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 11:27:34 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/10 11:08:45 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 15:27:38 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <strings.h>
@@ -15,10 +15,12 @@
 
 static int	ft_word_count(char const *s, char c)
 {
-	int	word_count = 0;
-	int	i = 0;
+	int	word_count;
+	int	i;
 
-	if (!s || !c)
+	word_count = 0;
+	i = 0;
+	if (!s)
 		return (-1);
 	while (s[i])
 	{
@@ -29,9 +31,9 @@ static int	ft_word_count(char const *s, char c)
 		while (s[i] != c && s[i])
 			i++;
 	}
-	return (word_count);	
-		
+	return (word_count);
 }
+
 static char	*w_create(char const *s, char c)
 {
 	int		i;
@@ -78,7 +80,7 @@ char	**ft_split(char const *s, char c)
 	return (ptab);
 }
 
-int	main ()
+/*int	main ()
 {
 	char const	s[] = "je ne veux";
 	char 	c = ' ';
@@ -93,3 +95,4 @@ int	main ()
 	}
 	return (0);
 }
+*/

@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 13:20:44 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/17 15:06:59 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 15:45:32 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -19,11 +19,10 @@ void	*ft_memset(void *dest, int c, size_t len)
 	unsigned char	*d;
 
 	i = 0;
-	d = (unsigned char*)dest;
+	d = (unsigned char *)dest;
 	while (i < len)
 	{
-		//char b = d[i];
-		d[i]  = c;
+		d[i] = c;
 		i++;
 	}
 	dest = d;

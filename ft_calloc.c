@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 15:04:02 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/17 16:05:22 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 14:42:56 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -21,7 +21,7 @@
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count,size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*dest;
 
@@ -44,4 +44,3 @@ int	main()
 	return (0);
 }
 */
-

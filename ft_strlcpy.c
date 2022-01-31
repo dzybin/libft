@@ -6,37 +6,37 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 13:21:04 by dzybin            #+#    #+#             */
-/*   Updated: 2021/12/01 12:46:06 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/01/31 10:16:24 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+//#include <string.h>
+#include "libft.h"
 #include <stdio.h>
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t	i = 0;
+	size_t	i;
 
-	while (i < n - 1)
+	i = 0;
+	if (size == 0)
+		return (ft_strlen(src));
+	while (src[i] && i < size -1)
 	{
-		if (*src != '\0')
-		{
-			*dest++ = *src++;
-		}
-		else
-		{
-			break;
-		}
-		i++;		
+		dst[i] = src[i];
+		i++;
 	}
-	*dest = '\0';
+	dst[i] = '\0';
+	while (src[i])
+		i++;
 	return (i);
 }
-//int	main()
-//{
-//	char	dest[] = "bonjour";
-//	const char	src[] = "hellololo";
-//	ft_strlcpy(dest, src, 4);
-//	printf("ft->  %s\n", dest);
-//	return (0);
-//}
+/*int	main()
+{
+	char	dest[] = "bonjour";
+	const char	src[] = "hellololo";
+	ft_strlcpy(dest, src, 4);
+	printf("ft->  %s\n", dest);
+	return (0);
+}
+*/
