@@ -6,7 +6,7 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 14:28:45 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/31 15:23:08 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/02/01 16:47:16 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,6 @@ void	ft_putnbr_fd(int n, int fd);
 */
 
 int		ft_atoi(const char *nptr);
-int		ft_abs(int nb);
 
 /*
 ** String

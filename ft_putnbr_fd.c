@@ -6,14 +6,19 @@
 /*   By: dzybin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 12:21:05 by dzybin            #+#    #+#             */
-/*   Updated: 2022/01/31 15:33:34 by dzybin           ###   ########.fr       */
+/*   Updated: 2022/02/01 14:50:43 by dzybin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
-//void    ft_putchar_fd(char c, int fd);
-//int     ft_abs(int nb);
+
+static int	ft_abs(int nb)
+{
+	if (nb < 0)
+		return (-nb);
+	else
+		return (nb);
+}
 
 void	ft_putnbr_fd(int n, int fd)
 {
